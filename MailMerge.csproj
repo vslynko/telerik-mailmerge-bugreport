@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MailMergeTemplate.docx" />
+    <Content Include="MailMergeTemplate.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Telerik.Windows.Documents.Flow" Version="2021.1.118" />
+    <PackageReference Include="Telerik.Windows.Documents.Flow.FormatProviders.Pdf" Version="2021.1.118" />
+  </ItemGroup>
+
+</Project>
